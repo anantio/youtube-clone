@@ -8,12 +8,15 @@ import {
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+import SearchBar from "./SearchBar";
 
 const Head = () => {
   const dispatch = useDispatch();
   const handleMenuToggle = () => {
     dispatch(toggleMenu());
   };
+  const navigate = useNavigate();
 
   return (
     <div className="grid grid-flow-col p-2 m-2 shadow-md">
@@ -23,24 +26,20 @@ const Head = () => {
           className="cursor-pointer"
           onClick={() => handleMenuToggle()}
         />
+
         <FontAwesomeIcon
           className="mx-2"
           icon={faYoutube}
           size="2xl"
           style={{ color: "#d3350d" }}
+          onClick={() => {
+            navigate("/");
+          }}
         />
-        <strong>YouTube</strong>
+        {/* <strong>YouTube</strong> */}
       </div>
 
-      <div className=" col-span-10 w-full">
-        <input
-          className="border border-gray-400 p-2 rounded-l-full w-4/5"
-          type="text"
-        />
-        <button className="border border-gray-400 p-2 rounded-r-full bg-gray-100 w-1/12">
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-        </button>
-      </div>
+      <SearchBar />
       <div className=" col-span-1">
         <FontAwesomeIcon icon={faUser} />
       </div>
