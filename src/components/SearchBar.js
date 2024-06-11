@@ -21,7 +21,9 @@ const SearchBar = () => {
       })
     );
   };
+
   const searchCache = useSelector((store) => store.search);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       if (searchCache[searchQuery]) {
@@ -35,6 +37,7 @@ const SearchBar = () => {
       clearTimeout(timer);
     };
   }, [searchQuery]);
+
   return (
     <div>
       <div className="col-span-10 w-full">

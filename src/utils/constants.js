@@ -5,3 +5,92 @@ export const YOUTUBE_VIDEOS_API =
   GOOGLE_API_KEY;
 export const YOUTUBE_SEARCH_API =
   "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+
+export const commentsData = [
+  {
+    name: "Anant Singh",
+    text: "Lorem Ipsum dolor sit amet, consectetur adip",
+    replies: [
+      {
+        name: "Anant Singh",
+        text: "Lorem Ipsum dolor sit amet, consectetur adip",
+        replies: [
+          {
+            name: "Anant Singh",
+            text: "Lorem Ipsum dolor sit amet, consectetur adip",
+            replies: [
+              {
+                name: "Anant Singh",
+                text: "Lorem Ipsum dolor sit amet, consectetur adip",
+                replies: [
+                  {
+                    name: "Anant Singh",
+                    text: "Lorem Ipsum dolor sit amet, consectetur adip",
+                    replies: [
+                      {
+                        name: "Anant Singh",
+                        text: "Lorem Ipsum dolor sit amet, consectetur adip",
+                        replies: [],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Anant Singh",
+    text: "Lorem Ipsum dolor sit amet, consectetur adip",
+    replies: [
+      {
+        name: "Anant Singh",
+        text: "Lorem Ipsum dolor sit amet, consectetur adip",
+        replies: [
+          {
+            name: "Anant Singh",
+            text: "Lorem Ipsum dolor sit amet, consectetur adip",
+            replies: [],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Anant Singh",
+    text: "Lorem Ipsum dolor sit amet, consectetur adip",
+    replies: [
+      {
+        name: "Anant Singh",
+        text: "Lorem Ipsum dolor sit amet, consectetur adip",
+        replies: [
+          {
+            name: "Anant Singh",
+            text: "Lorem Ipsum dolor sit amet, consectetur adip",
+            replies: [
+              {
+                name: "Anant Singh",
+                text: "Lorem Ipsum dolor sit amet, consectetur adip",
+                replies: [
+                  {
+                    name: "Anant Singh",
+                    text: "Lorem Ipsum dolor sit amet, consectetur adip",
+                    replies: [],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Anant Singh",
+    text: "Lorem Ipsum dolor sit amet, consectetur adip",
+    replies: [],
+  },
+];
