@@ -8,6 +8,8 @@ import MainContainer from "./components/MainContainer";
 import WatchPage from "./components/WatchPage";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 import Demo from "./components/Demo";
+import Demo2 from "./components/Demo2";
+import ImageSlider from "./components/ImageSlider";
 
 const appRouter = createBrowserRouter([
   {
@@ -35,7 +37,16 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "demo",
-        element: <Demo />,
+        element: (
+          <>
+            <Demo />
+            <Demo2 />
+          </>
+        ),
+      },
+      {
+        path: "slider",
+        element: <ImageSlider />,
       },
     ],
   },
